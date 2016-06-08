@@ -1,0 +1,223 @@
+# Site settings
+baseurl = "https://rscale.io/"
+languageCode = "en-us"
+title = "Resilient Scale"
+theme = "hugo-agency-theme"
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = "UA-78426247-1"
+
+[params]
+
+	# You can use Markdown syntax for urls [text](//url.to/source) or
+	# most longer texts.
+	#
+	# All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+	# for more icons. The icons are represented by their corresponding
+	# CSS class.
+
+	# To provide some metadata for search engines feel free to add a few
+    # information about you and your website.
+	name = "Resilient Scale"
+	description = "Expert consulting and training on all things Cloud Native.  Cloud Foundry, BOSH, Spring, Concourse."
+
+	# Since this template is static, the contact form uses www.formspree.io as a
+	# proxy. The form makes a POST request to their servers to send the actual
+	# email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+	email = "contact@resilientscale.io"
+
+    # Link custom assets relative to /static
+    custom_css = ["/css/rscale.css"]
+    custom_js  = []
+
+
+	# Navigation
+	[params.navigation]
+		services = "Services"
+		expertise = "Expertise"
+		portfolio = "Portfolio"
+		about = "About"
+		team = "Team"
+		contact = "Contact"
+
+    # Add custom links. Those can be pre- and postpended to the default menu above.
+    # Use the weight attribute to order your custom links. Uncomment the example
+    # below and replace the values with your own.
+
+    # prepended links
+    #[[menu.prepend]]
+    #    url = "http://gohugo.io"
+    #    name = "Hugo"
+    #    weight = 10
+
+
+	# Hero section
+	[params.hero]
+		# To change the background image of the hero, replace 'header-bg.jpg' in
+		# the 'static/img' folder.
+		title = "Making Cloud Native a Reality"
+		subtitle = "Immersive<span class='divider'></span>Agile<span class='divider'></span>Resilient"
+		buttonText = "Tell me more"
+
+
+	# Services section
+	[params.services]
+    enable = true
+		title = "Services"
+		subtitle = "Expert consulting and training on Cloud Native. "
+
+        [[params.services.row]]
+
+            [[params.services.row.list]]
+                icon = "fa-share-alt"
+                title = "Consulting"
+                description = "Get moving in the right direction, solve your unique challenges, and outpace your competition."
+
+						[[params.services.row.list]]
+								icon = "fa-mortar-board"
+								title = "Training"
+								description = "Immersive training in Cloud Native topics: Cloud Foundry, Spring, BOSH, and Concourse."
+
+						[[params.services.row.list]]
+                icon = "fa-gears"
+                title = "Workshops"
+                description = "Part training, part consulting.  Learn in the context of your specific use cases and challenges."
+
+		[params.expertise]
+	    enable = true
+			title = "Expertise"
+			subtitle = "Focused on the most impactful technologies in Cloud Native. "
+
+        [[params.expertise.row]]
+
+            [[params.expertise.row.list]]
+                image = "img/expertise/CloudFoundryCorp_vertical_RGB.png"
+                title = "Cloud Foundry & BOSH"
+                description = "Ambassador - User/developer/operator since March 2012 - Core committer in the Pivotal DOJO - Certification item writing chair"
+
+						[[params.expertise.row.list]]
+								image = "img/expertise/Spring.png"
+								title = "Spring Cloud"
+								description = "Creator/contributor of the Spring Boot Service Broker - Active Spring user since 2003"
+
+						[[params.expertise.row.list]]
+                image = "img/expertise/concourse.png"
+                title = "Concourse"
+                description = "Painfully early adopter - Architect of deployment running hundreds of parameterized pipelines"
+#fa-gears
+#fa-globe
+#fa-leaf
+#fa-trophy
+#fa-group
+# fa-mortar-board
+#fa-tv
+
+	# Portfolio section
+	[params.portfolio]
+        enable = false
+		# All projects defined in their own files. You can find example projects
+		# at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
+		# at the root of this Hugo site.
+		# For more informtion take a look at the README.
+		title = "Portfolio"
+		subtitle = "Lorem ipsum dolor sit amet consectetur."
+
+		[params.portfolio.modal]
+            client = "Client"
+            date = "Date"
+            category = "Category"
+            buttonText = "Close project"
+
+
+    # About section
+	[params.about]
+    enable = true
+		title = "About"
+		subtitle = "The journey has begun"
+		endpoint = "Be part<br>of our<br>story!"
+
+		# The events will be listed from the top to the bottom.
+		# All images are stored under 'static/img/about'.
+		# Replace them with your own.
+		[[params.about.events]]
+			img = "1.jpg"
+			date = "June 8, 2016"
+			title = "Our Humble Beginnings"
+			description = "Excited for the journey.  We are just getting started..."
+
+
+	# Team section
+	[params.team]
+    enable = true
+		title = "Our team"
+		subtitle = "Starting small..."
+		description = ""
+
+		# All team member's pictures are stored under 'static/img/team'.
+		# Replace them with your own too.
+		[[params.team.members]]
+			img = "profile.png"
+			name = "Steve Greenberg"
+			position = "Founder"
+			social = [
+				["fa-twitter", "https://twitter.com/spgreenberg"],
+				["fa-comment-o", "https://blog.steveg.co"],
+				["fa-linkedin", "https://www.linkedin.com/in/sgreenberg"]
+			]
+
+	# Client section
+    [params.clients_list]
+        enable = false
+
+    	# All the clients' logos are stored under 'static/img/logos'.
+    	# Replace them with your clients's logos.
+
+
+	# Contact section
+	[params.contact]
+    enable = true
+		title = "Contact us"
+		subtitle  = "General inquiries and engagement availability"
+		buttonText = "Send message"
+
+		# 'warning' defines error messages for invalid inputs
+		[params.contact.form.name]
+			text = "Your Name *"
+			warning = "Please enter your name."
+
+		[params.contact.form.email]
+			text = "Your Email *"
+			warning = "Please enter your email address."
+
+		[params.contact.form.phone]
+			text = "Your Phone *"
+			warning = "Please enter your phone number."
+
+		[params.contact.form.message]
+			text = "Your Message *"
+			warning = "Please enter a message."
+
+
+	# Footer section
+	[params.footer]
+    enable = true
+		copyright = "Copyright (c) 2016 Resilient Scale, LLC.  All Rights Reserved."
+
+		[[params.footer.social]]
+			icon = "fa-twitter"
+			link = "https://twitter.com/ResilientScale"
+
+		[[params.footer.quicklinks]]
+			text = "Privacy Policy"
+			link = "/privacy.html"
+
+		[[params.footer.quicklinks]]
+			text = "Terms of Use"
+			link = "/terms.html"

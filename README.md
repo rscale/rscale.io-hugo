@@ -1,1 +1,1 @@
-# rscale.io-hugo
+# rscale.github.io
