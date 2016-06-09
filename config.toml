@@ -62,7 +62,7 @@ googleAnalytics = "UA-78426247-1"
 	[params.hero]
 		# To change the background image of the hero, replace 'header-bg.jpg' in
 		# the 'static/img' folder.
-		title = "Making Cloud Native a Reality"
+		title = "Making Cloud Native YOUR Reality"
 		subtitle = "Immersive<span class='divider'></span>Agile<span class='divider'></span>Resilient"
 		buttonText = "Tell me more"
 
