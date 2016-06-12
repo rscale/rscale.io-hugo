@@ -98,17 +98,14 @@ googleAnalytics = "UA-78426247-1"
         [[params.expertise.row]]
 
             [[params.expertise.row.list]]
-                image = "img/expertise/CloudFoundryCorp_vertical_RGB.png"
                 title = "Cloud Foundry & BOSH"
                 description = "Ambassador - User/developer/operator since March 2012 - Core committer in the Pivotal DOJO - Certification item writing chair"
 
 						[[params.expertise.row.list]]
-								image = "img/expertise/Spring.png"
 								title = "Spring Cloud"
 								description = "Creator/contributor of the Spring Boot Service Broker - Active Spring user since 2003"
 
 						[[params.expertise.row.list]]
-                image = "img/expertise/concourse.png"
                 title = "Concourse"
                 description = "Painfully early adopter - Architect of deployment running hundreds of parameterized pipelines"
 #fa-gears
