@@ -46,6 +46,14 @@ header .intro-text .intro-heading {
   letter-spacing: -3px;
 }
 
+header .image-credit a {
+  color: #A1A1A1;
+  font-size: 0.8em;
+  float: right;
+  margin-right: 0px;
+  padding-right: 0px;
+}
+
 .expertise-image {
   max-height: 200px;
   min-height: 200px;
